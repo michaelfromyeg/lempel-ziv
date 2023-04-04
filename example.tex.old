@@ -6,16 +6,23 @@
 
 \input{preamble}
 
-\title{Lempel-Ziv compression: An exploration}
-\date{April 10, 2023}
-\author{Michael DeMarco}
+\title{Example LaTeX File -- AdaBoost Algorithm}
+\date{}
+\author{Jonathan Scarlett}
 
-% \newcommand{\ntrain}{n_{\rm train}}
+\newcommand{\ntrain}{n_{\rm train}}
+\newcommand{\ntest}{n_{\rm test}}
 
 \onehalfspacing
 
 \begin{document}
 \maketitle
+
+{\color{red}
+    \section*{Note}
+
+    This document is related to another module MA4270, not CS3236.  For CS3236, it's only being uploaded so that you can see how certain things are done in LaTeX.
+}
 
 \section{Introduction} \label{sec:intro}
 
@@ -187,6 +194,8 @@ In the discussion after Theorem \ref{thm:main}, we concluded that the training e
 
 A partial explanation for this phenomenon was given by Schapire {\em et al.}~\cite{schapire1998boosting} using the notion of {\em margin}.  Recalling that the proof of Theorem \ref{thm:main} is based on upper bounding the 0-1 loss by the exponential loss, we find that a very small exponential loss not only guarantees a low 0-1 loss, but also guarantees a {\em large margin} (i.e., $f_M(\xv)$ is not only positive, but is far from zero).  By exploiting this property and some advanced connections between margin and generalization, theoretical guarantees can be provided not only for the training error, but also the test error \cite{schapire1998boosting}.
 
+
+% \renewcommand{\newblock}{}
 \newpage
 \bibliographystyle{plain}
 \bibliography{refs}
